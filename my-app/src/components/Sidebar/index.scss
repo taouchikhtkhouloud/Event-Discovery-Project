@@ -6,5 +6,16 @@ left: 0px;
 top: 0px;
 }
 .me-auto{
-    margin-left:300px ;
+    margin-left:40px ;
+}
+.login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin: 30px;
+    .btn{
+        background-color: #4F46BA;
+        margin-left: 10px;
+    }
 }
