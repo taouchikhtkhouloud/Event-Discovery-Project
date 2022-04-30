@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <form action='../../post' method='post' className="form">
+      <form action='../../post' method='POST' className="form">
         <button type="submit">
             Connected?
         </button>
