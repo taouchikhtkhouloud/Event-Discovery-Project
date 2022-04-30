@@ -2,13 +2,17 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import { Footer, Header } from './container';
+import {  Navbar } from './components';
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path="/" element={<Layout />}></Route>
-      </Routes>
-    </>
+    <div className="App">
+    <div className="gradient__bg">
+      <Navbar />
+      <Header />
+    </div>
+    
+  </div>
   );
 }
 

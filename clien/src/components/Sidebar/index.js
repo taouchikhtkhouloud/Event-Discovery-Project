@@ -27,9 +27,8 @@ const Sidebar = () => (
       
        
       <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Evenement</Nav.Link>
-      <Nav.Link href="#pricing">Groupe</Nav.Link>
-      <Nav.Link href="#blog">Blog</Nav.Link>
+      <Nav.Link href="#evenement">Evenement</Nav.Link>
+     
       <Form className="d-flex">
         <FormControl
           type="search"
