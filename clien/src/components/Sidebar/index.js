@@ -18,8 +18,8 @@ const Sidebar = () => (
             <img src={Logo} alt="logo" />
         </Navbar.Brand>
         <div className='login'>
-          <p>inscrivez-vous</p>
-        <Button className='btn'>recherche</Button>
+          <Navbar.Brand><p>inscrivez-vous</p></Navbar.Brand>
+        <Button className='btn'>Se connecter</Button>
 
         </div>
        

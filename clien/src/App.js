@@ -10,6 +10,7 @@ function App() {
     <div className="gradient__bg">
       <Navbar />
       <Header />
+      <Footer />
     </div>
     
   </div>
