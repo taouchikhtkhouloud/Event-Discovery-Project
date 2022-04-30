@@ -1,14 +1,14 @@
-import './App.css';
 
+import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 function App() {
   return (
-    <div className="App">
-      <form action='../../post' method='POST' className="form">
-        <button type="submit">
-            Connected?
-        </button>
-      </form>
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </>
   );
 }
 
