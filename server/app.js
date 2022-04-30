@@ -10,6 +10,6 @@ app.post("/post", (req, res) => {
     res.redirect("/");
   });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8090;
 
 app.listen(PORT, console.log(`Server starting on port ${PORT}`));
