@@ -8,20 +8,20 @@ import Nav from 'react-bootstrap/Nav'
 import {Form, FormControl, Button} from 'react-bootstrap'
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-
+import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return ( 
     <div>
         <Navbar className="top" bg="light" variant="light">
     <Container>
-    <Navbar.Brand className='gpt3__navbar-links_logo' href="#home">
+    <Navbar.Brand className='gpt3__navbar-links_logo' exact to="#home">
             <img src={Logo} alt="logo" />
         </Navbar.Brand>
         <div className="gpt3__navbar-sign">
         <div className='login'>
-          <Navbar.Brand><p>inscrivez-vous</p></Navbar.Brand>
-        <Button className='btn'>Se connecter</Button>
+          <NavLink to='register'><p>inscrivez-vous</p></NavLink>
+        <NavLink to="login"><Button className='btn'>Se connecter</Button></NavLink>
 
         </div>
         </div>
@@ -29,8 +29,8 @@ const Sidebar = () => {
      <Nav className="me-auto">
      <div className="gpt3__navbar-links_container">
        
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#evenement">Evenement</Nav.Link>
+      <NavLink className="a" exact to="/">Home</NavLink>
+      <NavLink className="b" exact to="evenement">Evenement</NavLink>
      </div>
      
 
@@ -43,12 +43,12 @@ const Sidebar = () => {
      {toggleMenu && (
      <div className="gpt3__navbar-menu_container scale-up-center">
        <div className="gpt3__navbar-menu_container-links">
-       <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#evenement">Evenement</Nav.Link>
+       <NavLink className="a" exact to="/">Home</NavLink>
+      <NavLink className="b" exact to="evenement">Evenement</NavLink>
        </div>
        <div className="gpt3__navbar-menu_container-links-sign">
-       <Navbar.Brand><p>inscrivez-vous</p></Navbar.Brand>
-        <Button className='btn'>Se connecter</Button>
+       <NavLink to='register'><p>inscrivez-vous</p></NavLink>
+        <NavLink to="login"><Button className='btn'>Se connecter</Button></NavLink>
        </div>
      </div>
      )}

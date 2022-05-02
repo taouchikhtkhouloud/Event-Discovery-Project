@@ -3,18 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import Login from './pages/login';
+import Register from './pages/register';
+import Evenement from './pages/evenement'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
-    
-  </React.StrictMode>
+  
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ <App /> }>
+          <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register/>} />
+      <Route path="/evenement" element={<Evenement/>} />
+
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

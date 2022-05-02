@@ -1,30 +1,37 @@
 
 import './App.scss';
-import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import { Footer, Header, Slider, Fonct, Search } from './container';
 import {  Navbar } from './components';
-import data from './data';
-import fct from './fonctionnalites';
+import Register from "./pages/register";
+import Login from "./pages/login";
+import Home from "./pages/home";
+import Evenement from './pages/evenement';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import {BrowserRouter as Router ,Route, Routes} from "react-router-dom";
 
  
 
 function App() {
   return (
-    <div className="App">
-    <div className="gradient__bg">
-      <Navbar />
-      <Header />
-      <Search />
-      <Fonct data={fct}/>
-      <Slider data = {data}/>
-      <Footer />
-      
-    </div>
     
-  </div>
+    <div className='app'>
+      <Navbar></Navbar>
+    <Routes>
+
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register/>} />
+      <Route path="/evenement" element={<Evenement/>} />
+    </Routes>
+    <Footer></Footer>
+    </div>
+      
+    
+    
+    
+  
   );
 }
 

@@ -1,0 +1,36 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+   
+  }
+.home_search{
+    background-color: rgba(240, 248, 255, 0.831);
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+  .home_panelList-wrap,
+  .home_panel-wrap,
+  .home_list-wrap {
+    overflow-y: auto;
+    background-color:  rgba(240, 248, 255, 0.831);
+    width: 95%;
+    margin-left: 20px;
+    
+  }
+  
+  .home_panelList-wrap {
+    flex: 1;
+    display: flex;
+    
+  }
+  .home_panel-wrap {
+    flex-basis: 280px;
+    padding: 1rem;
+  }
+  .home_list-wrap {
+    flex: 1;
+    padding: 1rem;
+  }
