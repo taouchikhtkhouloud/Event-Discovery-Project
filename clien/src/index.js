@@ -9,6 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Login from './pages/login';
 import Register from './pages/register';
 import Evenement from './pages/evenement'
+import About from './pages/about';
+import Contact from './pages/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
@@ -19,6 +21,8 @@ root.render(
           <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register/>} />
       <Route path="/evenement" element={<Evenement/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
 
           </Route>
         </Routes>

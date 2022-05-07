@@ -31,6 +31,8 @@ const Sidebar = () => {
        
       <NavLink className="a" exact to="/">Home</NavLink>
       <NavLink className="b" exact to="evenement">Evenement</NavLink>
+      <NavLink className="b" exact to="about">about us</NavLink>
+      <NavLink className="b" exact to="Contact">contact us</NavLink>
      </div>
      
 

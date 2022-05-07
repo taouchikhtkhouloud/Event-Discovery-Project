@@ -20,7 +20,7 @@ const FilterPanel = ({
   }) => (
     <div>
       <div className='input-group'>
-        <p className='label'>Category</p>
+        <p className='label'>Type</p>
         <FilterListToggle
           options={categoryList}
           value={selectedCategory}
@@ -28,7 +28,7 @@ const FilterPanel = ({
         />
       </div>
       <div className='input-group'>
-        <p className='label'>Cuisine</p>
+        <p className='label'>Catégorie</p>
         
         {cuisines.map((cuisine) => (
           <CheckboxProton
