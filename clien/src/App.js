@@ -8,6 +8,7 @@ import Login from "./pages/login";
 import Home from "./pages/home";
 import Evenement from './pages/evenement';
 import About from './pages/about';
+import OneEvent from './pages/oneEvent';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import {BrowserRouter as Router ,Route, Routes} from "react-router-dom";
@@ -28,6 +29,7 @@ function App() {
       <Route path="/evenement" element={<Evenement/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/oneEvent" element={<OneEvent/>} />
     </Routes>
     <Footer></Footer>
     </div>

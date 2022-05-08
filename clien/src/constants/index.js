@@ -11,7 +11,7 @@ import im10 from '../assets/images/im10.jpeg'
 import im11 from '../assets/images/im11.jpeg'
 import im12 from '../assets/images/im12.jpeg'
 
-export const categoryList = [
+export  const categoryList = [
     {
       id: 1,
       value: 'En ligne',
@@ -63,6 +63,7 @@ export const categoryList = [
       rating: 5,
       price: 2500,
       coverSrc: im6,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
     },
     {
       id: 2,
@@ -74,6 +75,8 @@ export const categoryList = [
       rating: 4,
       price: 1000,
       coverSrc: im7,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 3,
@@ -86,6 +89,8 @@ export const categoryList = [
       rating: 3,
       price: 2000,
       coverSrc: im8,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 4,
@@ -98,6 +103,8 @@ export const categoryList = [
       rating: 1,
       price: 1800,
       coverSrc: im9,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 5,
@@ -110,6 +117,8 @@ export const categoryList = [
       rating: 5,
       price: 2000,
       coverSrc: im12,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 6,
@@ -122,6 +131,8 @@ export const categoryList = [
       rating: 5,
       price: 3500,
       coverSrc: im11,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 7,
@@ -134,6 +145,8 @@ export const categoryList = [
       rating: 2,
       price: 2200,
       coverSrc: im10,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 8,
@@ -146,6 +159,8 @@ export const categoryList = [
       rating: 1,
       price: 1900,
       coverSrc: im5,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 9,
@@ -158,6 +173,8 @@ export const categoryList = [
       rating: 4,
       price: 2750,
       coverSrc: im4,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 10,
@@ -170,6 +187,8 @@ export const categoryList = [
       rating: 2,
       price: 4350,
       coverSrc: im3,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 11,
@@ -182,6 +201,8 @@ export const categoryList = [
       rating: 3,
       price: 3300,
       coverSrc: im2,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
     {
       id: 12,
@@ -194,5 +215,8 @@ export const categoryList = [
       rating: 2,
       price: 4100,
       coverSrc: im1,
+      text:"ldbckdbkb dbchich  xcbcbdjkbcjk bdcdckdck cdbjhbdjhcbjh jhbjcbjkbcjkbdks dbjhbdjcbjdb jbjcbjdbjbdb",
+
     },
   ];
+  export default dataList;

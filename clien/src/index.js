@@ -11,6 +11,7 @@ import Register from './pages/register';
 import Evenement from './pages/evenement'
 import About from './pages/about';
 import Contact from './pages/Contact';
+import OneEvent from './pages/oneEvent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
@@ -23,6 +24,7 @@ root.render(
       <Route path="/evenement" element={<Evenement/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/oneEvent" element={<OneEvent/>} />
 
           </Route>
         </Routes>
