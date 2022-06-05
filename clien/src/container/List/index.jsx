@@ -1,17 +1,17 @@
 import React from 'react';
 import ListItem from './ListItem';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './styles.css';
 
 const List = ({ list }) => (
-    <Link to='/oneEvent'>
   <div className='list-wrap'>
 
     {list.map((item) => (
+    <NavLink to={`/oneEvent/${item.id}`}>
       <ListItem key={item.id} item={item} />
+    </NavLink>
     ))}
   </div>
-    </Link>
 );
 
 export default List;

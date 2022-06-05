@@ -24,7 +24,7 @@ root.render(
       <Route path="/evenement" element={<Evenement/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
-      <Route path="/oneEvent" element={<OneEvent/>} />
+      <Route exact path="/oneEvent/:id" element={<OneEvent/>} />
 
           </Route>
         </Routes>

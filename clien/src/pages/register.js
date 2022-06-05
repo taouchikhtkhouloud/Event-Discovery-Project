@@ -3,6 +3,7 @@ import { mobile } from "../responsive";
 import { Navbar } from "../components";
 import { Footer } from "../container";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -59,6 +60,13 @@ const Button = styled.button`
 `;
 
 const Register = () => {
+  const [prenomReg,setPrenomReg]=useState("");
+  const [nomReg,setNomReg]=useState("");
+  const [emailReg,setEmailReg]=useState("");
+  const [usernameReg,setUsernameReg]=useState("");
+  const [passwordReg,setPasswordReg]=useState("");
+
+
   return (
     <div>
      
@@ -66,11 +74,21 @@ const Register = () => {
       <Wrapper>
         <Title>Créér un compte </Title>
         <Form>
-          <Input placeholder="prenom" />
-          <Input placeholder="nom" />
-          <Input placeholder="username" />
-          <Input placeholder="email" />
-          <Input placeholder="mot de passe" />
+          <Input placeholder="prenom" type="text" onChange={(e) => {
+              setPrenomReg(e.target.value)
+          }} />
+          <Input placeholder="nom" type="text" onChange={(e) => {
+              setNomReg(e.target.value)
+          }} />
+          <Input placeholder="username" type="text" onChange={(e) => {
+              setUsernameReg(e.target.value)
+          }} />
+          <Input placeholder="email" type="email" onChange={(e) => {
+              setEmailReg(e.target.value)
+          }}/>
+          <Input placeholder="mot de passe" type="text" onChange={(e) => {
+              setPasswordReg(e.target.value)
+          }}/>
           <Input placeholder="confirmer le mot de passe" />
           <Agreement>
             By creating an account, I consent to the processing of my personal
