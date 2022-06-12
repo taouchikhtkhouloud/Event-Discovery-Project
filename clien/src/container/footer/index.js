@@ -10,13 +10,13 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-btn">
-      <p>Commencer</p>
+      <p>Commencer Maintenant</p>
     </div>
     
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         <img src={Logo} alt="logo" />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
+        <p>Bienvenue chez nous <br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>

@@ -19,24 +19,23 @@ const Sidebar = () => {
             <img src={Logo} alt="logo" />
         </Navbar.Brand>
         <div className="gpt3__navbar-sign">
-        <div className='login'>
-          <NavLink to='register'><p>inscrivez-vous</p></NavLink>
-        <NavLink to="login"><Button className='btn'>Se connecter</Button></NavLink>
-
-        </div>
+        
         </div>
        
      <Nav className="me-auto">
      <div className="gpt3__navbar-links_container">
        
       <NavLink className="a" exact to="/">Home</NavLink>
-      <NavLink className="b" exact to="evenement">Evenement</NavLink>
-      <NavLink className="b" exact to="about">about us</NavLink>
-      <NavLink className="b" exact to="Contact">contact us</NavLink>
+      <NavLink className="b" exact to="evenement">Events</NavLink>
+      <NavLink className="b" exact to="about">About us</NavLink>
+      <NavLink className="b" exact to="Contact">Contact us</NavLink>
      </div>
-     
+          </Nav>
+          <div className='login'>
+          <NavLink to='register'><Button className='btn'>Sign Up</Button></NavLink>
+        <NavLink to="login"><Button className='btn'>Login</Button></NavLink>
 
-    </Nav>
+        </div>
     </Container>
      <div className="gpt3__navbar-menu">
      {toggleMenu
