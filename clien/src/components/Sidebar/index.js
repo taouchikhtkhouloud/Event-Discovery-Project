@@ -20,7 +20,7 @@ const Sidebar = () => {
         </Navbar.Brand>
         <div className="gpt3__navbar-sign">
         <div className='login'>
-          <NavLink style={{textDecoration: 'none'}} to='register'><p>inscrivez-vous</p></NavLink>
+          <NavLink to='register'><p>inscrivez-vous</p></NavLink>
         <NavLink to="login"><Button className='btn'>Se connecter</Button></NavLink>
 
         </div>
