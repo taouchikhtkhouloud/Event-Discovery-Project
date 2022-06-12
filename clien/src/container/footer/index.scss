@@ -140,7 +140,7 @@
 
     .gpt3__footer-btn p {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 16px;
     }
 }
 
@@ -149,4 +149,30 @@
         font-size: 27px;
         line-height: 38px;
     }
+}
+.c{
+    width: 87px;
+height: 19px;
+right: 0px;
+top: calc(30% - 17px/2);
+
+font-family: 'Raleway';
+font-style: bold;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #f8f5f8;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 25px;
+text-decoration: none;
+    
 }
