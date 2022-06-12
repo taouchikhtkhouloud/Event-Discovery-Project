@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { dataList } from '../constants'
 
 import { useParams } from "react-router-dom";
 import "./event.css";
+import Paypal from "../components/paypal/paypal";
 
  const OneEvent=() =>{
  
@@ -12,6 +13,7 @@ import "./event.css";
     const prodid=useParams();
     const proDetail=dataList.filter(x=>x.id == prodid.id);
     const product=proDetail[0];
+    const [checkout, setCheckOut] = useState(false);
     console.log(product);
 
     return (
@@ -57,11 +59,21 @@ import "./event.css";
                   {/* buttons */}
                   <div>
                     <NavLink to="/evenement">
-                      <Button className="btnretour">retourner</Button>
+                      <Button style={{color:''}} className="btnretour">retourner</Button>
                     </NavLink>
-                    <NavLink to="/joint">
-                      <Button className="btnjoint">rejoindre</Button>
-                    </NavLink>
+                    {checkout ? (
+        <Paypal />
+             ) : (
+        <button className='pay'
+          onClick={() => {
+            setCheckOut(true);
+          }}
+        >
+          buy online
+        </button>
+        
+      )}
+      
                     
                   </div>
                 </div>

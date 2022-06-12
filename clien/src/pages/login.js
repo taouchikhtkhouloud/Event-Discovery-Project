@@ -79,10 +79,10 @@ const Login = () => {
       <Wrapper>
         
         <Title>Se connecter</Title>
-        <Form>
-          <Input placeholder="email" />
-          <Input placeholder="mot de passe" />
-          <Button>Se connecter</Button>
+        <Form action="../../login"method="post">
+          <Input type="text" name="email" placeholder="email" />
+          <Input type="password" name="password" placeholder="mot de passe" />
+          <Button type="submit">Se connecter</Button>
           <Linki>VOUS NE VOUS SOUVENEZ PAS DU MOT DE PASSE ?</Linki>
           <Link to="/register"><Linki >CRÉER UN NOUVEAU COMPTE</Linki></Link>
         </Form>

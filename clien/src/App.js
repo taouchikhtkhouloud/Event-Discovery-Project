@@ -18,7 +18,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    
+    <>
     <div className='app'>
       <Navbar></Navbar>
     <Routes>
@@ -31,9 +31,18 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route exact path="/oneEvent/:id" element={<OneEvent/>} />
     </Routes>
+    <div className="App">
+        <form action='../../Post' method='POST' >
+          <button type="submit">
+              Tap to test connection between React JS to Node Js?
+          </button>
+        </form>
+      </div>
+
+
     <Footer></Footer>
     </div>
-      
+    </>
     
     
     
