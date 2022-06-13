@@ -49,7 +49,7 @@ const Sidebar = () => {
       <NavLink className="b" exact to="evenement">Evenement</NavLink>
        </div>
        <div className="gpt3__navbar-menu_container-links-sign">
-       <NavLink to='register' ><p>inscrivez-vous</p></NavLink>
+       <NavLink to="register"><Button className='btn'>inscrivez-vous</Button></NavLink>
         <NavLink to="login"><Button className='btn'>Se connecter</Button></NavLink>
        </div>
      </div>
