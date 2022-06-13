@@ -4,5 +4,5 @@
 <br />
 <div align="center">
   <a href="https://github.com/OssamaLouati/EventScroller-PFA">
-    <img src="./clien/src/screen/Capture d’écran 2022-06-13 153433.jpg" alt="Logo" >
+    <img src="./clien/src/screen/img.jpg" alt="Logo" >
   </a>
