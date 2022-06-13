@@ -3,6 +3,6 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/OssamaLouati/EventScroller-PFA">
+  <a href="https://github.com/taouchikhtkhouloud/pfa-Project">
     <img src="./clien/src/screen/img.jpg" alt="Logo" >
   </a>
