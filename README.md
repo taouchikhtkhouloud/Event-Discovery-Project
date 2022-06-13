@@ -1,141 +1,27 @@
-<div id="top"></div>
+
+Modern Full Stack ECommerce Application with Stripe & Sanity
+![eCommerce](https://user-images.githubusercontent.com/70088342/160780701-7bb38a57-76bd-49a2-a4ec-49f89c50a7c7.png)
+
+## Launch your development career with project-based coaching - https://www.jsmastery.pro
+
+**Build and Deploy a fully responsive Modern Full Stack Ecommerce application with Payments functionality**. With Modern design, animations, the ability to add and edit products on the go using a CMS, all advanced cart functionalities, and most importantly the complete integration with Stripe so that you can cover REAL payments. This is the best e-commerce website project that you can currently find on YouTube!
+
+In this video, you'll learn:
+- Advanced React Best Practices such as
+    - Folder and file structure, hooks and refs
+- Advanced State Management of the entire application using React Context API
+- Next.js Best Practices such as
+    - File-based routing, Data fetching that allows server-side rendering and static generation which makes your websites incredibly optimized (show getServerSideProps, getStaticPaths, getStaticProps), and you’ll also learn how to use Next.js as a backend endpoint.
+- You’ll learn how to integrate Stripe to manage payments, products, shipping rates, and the entire checkout process
+- And most importantly you’ll learn how to manage the entire content of your app using Sanity. Sanity is the unified content platform that’ll make the making of our entire app possible. <show sanity desk>
+- Through Sanity, you or your clients will be able to change the store’s homepage and more importantly, the details of all the products in the store, instantly and on the go!
+- Sanity allows us to focus on developing the application without having to worry about the content, file storage, and databases. They’ll cover the dirty work for us and allow us to build scalable and modern e-commerce web applications extremely easily.
+
+![image](https://user-images.githubusercontent.com/70088342/160780701-7bb38a57-76bd-49a2-a4ec-49f89c50a7c7.png)
+![image](https://user-images.githubusercontent.com/70088342/160780206-9cfe7c0a-3d8e-4a20-a055-b12efebe6c30.png)
+![image](https://user-images.githubusercontent.com/70088342/160780265-692d37ac-7209-4d53-957a-e94b37d123c0.png)
+![image](https://user-images.githubusercontent.com/70088342/160780381-7c947640-422e-4729-abae-21911e9bc716.png)
+![image](https://user-images.githubusercontent.com/70088342/160780549-111ed048-cd4b-4740-b2fd-2c6fc3520c52.png)
+![image](https://user-images.githubusercontent.com/70088342/160780884-22d6025e-9b7d-4493-8136-b3dfbf00a32f.png)
 
 
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/taouchikhtkhouloud/pfa-Project/">
-    <img src="./clien/src/screen/img.jpg" alt="Logo" >
-  </a>
-
-  <h3 align="center">Event discovery</h3>
-
-  <p align="center">
-    UNE PLATEFORME DE PARTAGE ET RECHERCHE DES  EVENEMENTS!
-
-    <br />
-    <a href="https://github.com/OssamaLouati/EventScroller-PFA"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/OssamaLouati/EventScroller-PFA/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/OssamaLouati/EventScroller-PFA/issues">Request Feature</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<div align="center">
-  <a href="https://github.com/OssamaLouati/EventScroller-PFA">
-    <img src="./client/src/assets/project/landing.PNG" alt="Logo">
-    <img src="./client/src/assets/project/slider.PNG" alt="Logo">
-    <img src="./client/src/assets/project/filtrage.PNG" alt="Logo">
-    <img src="./client/src/assets/project/footer.PNG" alt="Logo">
-  </a>
-</div>  
-<br>
-<br>
-EventScroller is a web application that allows its users to meet new people, learn new things, find help, get out of their comfort zone and pursue their passions together.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### Built With
-
-EventScroller has been built with the following technologies:
-
-* [Node.js](https://nodejs.org/)
-* [React.js](https://reactjs.org/)
-* [Xammp](https://www.apachefriends.org/fr/index.html)
-* [Bootstrap](https://getbootstrap.com)
-* [Embedded-javascript](https://ejs.co/)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-### Prerequisites
-
-You need first to install the modules using npm command:
-* npm
-  ```sh
-  cd client
-  npm install
-  ```
-  ```sh
-  cd server
-  npm install
-  ```
-  
-
-### Installation
-
-
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/OssamaLouati/EventScroller-PFA.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Run the local server in `Terminal`
-   ```cmd
-   cd client
-   npm start
-   ```
-   ```cmd
-   cd server
-   nodemon server
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Oussama Louati - louati.oussama@ine.inpt.ma
-
-Project Link: [https://github.com/OssamaLouati/EventScroller-PFAT](https://github.com/OssamaLouati/EventScroller-PFA)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
