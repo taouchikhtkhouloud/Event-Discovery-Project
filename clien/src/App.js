@@ -9,10 +9,13 @@ import Home from "./pages/home";
 import Evenement from './pages/evenement';
 import About from './pages/about';
 import OneEvent from './pages/oneEvent';
+import OneEvent1 from './pages/oneEvent1';
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import {BrowserRouter as Router ,Route, Routes} from "react-router-dom";
 import Contact from './pages/Contact';
+import Createevent from './pages/createevent';
 
  
 
@@ -30,6 +33,8 @@ function App() {
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route exact path="/oneEvent/:id" element={<OneEvent/>} />
+      <Route exact path="/oneEvent1/:id" element={<OneEvent1/>} />
+      <Route exact path="/createevent" element={<Createevent/>} />
     </Routes>
     <div className="App">
         <form action='../../Post' method='POST' >

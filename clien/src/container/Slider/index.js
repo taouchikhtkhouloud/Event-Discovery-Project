@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import './index.scss';
 import { Button } from 'react-bootstrap';
-
+import { NavLink } from "react-router-dom";
 
 export default function MultipleItems({data}){
     const settings = {
@@ -19,7 +19,8 @@ export default function MultipleItems({data}){
             <h2 className="titre"> Événements populaires </h2>
             <Slider {...settings}>
             {data.map((item, index) => {
-                return (
+              return (
+                  <NavLink to={`/oneEvent1/${item.id}`}>
                   <div
                   className="card__container--inner--card"
                   key={index}>
@@ -39,11 +40,14 @@ export default function MultipleItems({data}){
                     
                     <p>prix: <span>{item.prix}</span></p>
                   </div>
+              </NavLink>
                 );
               })}
-
             </Slider>
+              <NavLink to="/evenement">
+
             <Button className='consulter'>Savoir plus </Button>
+              </NavLink>
 
           </div>
         );

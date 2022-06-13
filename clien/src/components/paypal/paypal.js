@@ -1,7 +1,12 @@
 import React, { useRef, useEffect } from "react";
+import { dataList } from '../../constants'
 
+import { useParams } from "react-router-dom";
 export default function Paypal() {
   const paypal = useRef();
+  const prodid=useParams();
+    const proDetail=dataList.filter(x=>x.id == prodid.id);
+    const product=proDetail[0];
 
   useEffect(() => {
     window.paypal
@@ -11,10 +16,10 @@ export default function Paypal() {
             intent: "CAPTURE",
             purchase_units: [
               {
-                description: "plat",
+                description: product.title,
                 amount: {
                   currency_code: "EUR",
-                  value: 220.0,
+                  value:product.price,
                 },
               },
             ],

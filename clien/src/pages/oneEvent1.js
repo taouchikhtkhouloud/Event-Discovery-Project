@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { dataList } from '../constants'
+import data  from '../data'
 
 import { useParams } from "react-router-dom";
 import "./event.css";
@@ -11,7 +11,7 @@ import Paypal from "../components/paypal/paypal";
  
     
     const prodid=useParams();
-    const proDetail=dataList.filter(x=>x.id == prodid.id);
+    const proDetail=data.filter(x=>x.id == prodid.id);
     const product=proDetail[0];
     const [checkout, setCheckOut] = useState(false);
     console.log(product);
@@ -26,13 +26,13 @@ import Paypal from "../components/paypal/paypal";
               {/* title */}
               <div className="row">
                 <div className="col-10 mx-auto text-center text-slanted text-white my-5">
-                  <h1>{product.title}</h1>
+                  <h1>{product.titre}</h1>
                 </div>
               </div>
               {/* end of title */}
               <div className="row">
                 <div className="col-10 mx-auto col-md-6 my-3">
-                  <img src={product.coverSrc} className="img-fluid" alt="" />
+                  <img src={product.url} className="img-fluid" alt="" />
                 </div>
                 {/* prdoduct info */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize ">
@@ -52,7 +52,7 @@ import Paypal from "../components/paypal/paypal";
                     <strong>
                       prix :
                       <p className="text-uppercase text-white"><span>$</span>
-                      {product.price}</p> 
+                      {product.prix}</p> 
                     </strong>
                   </h4>
                   

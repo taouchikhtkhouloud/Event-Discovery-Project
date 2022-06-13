@@ -1,5 +1,7 @@
 import React,  { Component } from 'react';
 import { Button } from 'react-bootstrap';
+import { NavLink } from "react-router-dom";
+
 import './index.scss';
 
 export default class Fonct extends Component {
@@ -16,12 +18,15 @@ export default class Fonct extends Component {
                         <img src={item.url} alt="item"/>
                         <h2>{item.title}</h2>
                         <p>{item.text}</p>
-                        <Button className='btn'>Consulter</Button>
+                      
                     </div>
                 )})}
 
                 </div>
+                <NavLink to="/login">
+
                 <Button className='joint'>Rejoindre nous</Button>
+                </NavLink>
                
             </div>
         )

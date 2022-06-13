@@ -5,6 +5,8 @@ import List from '../container/List'
 import EmptyView from '../components/EmptyView'
 import { dataList } from '../constants'
 import './styles.css'
+import photo from "../assets/images/img.png"
+import { NavLink } from "react-router-dom";
 export default function Evenement() {
     const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedRating, setSelectedRating] = useState(null);
@@ -67,7 +69,6 @@ export default function Evenement() {
       );
     }
 
-    // Cuisine Filter
     const cuisinesChecked = cuisines
       .filter((item) => item.checked)
       .map((item) => item.label.toLowerCase());
@@ -116,8 +117,25 @@ updatedList = updatedList.filter((item) =>
   return (
     <div className='home'>
       {/* Search Bar */}
-      <div className="home_search">
+      <div className="createEvent">
+       
+      <div className="ph">
+                <img src={photo}></img>
+                </div>
+                <div>
 
+                <h1>
+                créez votre propre événement
+              
+                </h1>
+                </div>
+                <div className="eventbtn">
+                <NavLink to="/createevent">
+        <button type="button">Démarrer</button></NavLink>
+      </div>
+      
+                </div>
+      <div className="home_search">
       <SearchBar
         value={searchInput}
         changeInput={(e) => setSearchInput(e.target.value)}
